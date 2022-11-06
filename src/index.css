@@ -1,0 +1,48 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+#js-licensing {
+  display: none;
+}
+
+.modal-backdrop {
+  display: none;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+/* Added Css  */
+      .tab {
+            overflow: hidden;
+            }
+            .tab-content {
+            max-height: 0;
+            transition: all 0.5s;
+            }
+            input:checked + .tab-label .test {
+                background-color: #000;
+            }
+            input:checked + .tab-label .test svg {
+                transform: rotate(180deg);
+                stroke: #fff;
+            }
+            input:checked + .tab-label::after {
+            transform: rotate(90deg);
+            }
+            input:checked ~ .tab-content {
+            max-height: 100vh;
+            }
